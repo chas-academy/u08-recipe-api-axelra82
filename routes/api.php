@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RecipeListController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -25,4 +26,11 @@ Route::group([
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/profile', [AuthController::class, 'userProfile']);
+
+    // Recipe list CRUD
+    Route::get('/recipelists', [RecipeListController::class, 'index']);
+    Route::get('/recipelist/{id}', [RecipeListController::class, 'show']);
+    Route::post('/recipelist', [RecipeListController::class, 'store']);
+    Route::put('/recipelist/{id}', [RecipeListController::class, 'update']);
+    Route::delete('/recipelist/{id}', [RecipeListController::class, 'destroy']);
 });
