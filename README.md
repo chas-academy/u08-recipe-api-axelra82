@@ -1,7 +1,5 @@
 # CHAS ACADEMY | ASSIGNMENT U08
 
-This app has been updated to work with [the API from assignment u08](https://github.com/chas-academy/u08-recipe-api-axelra82). Make sure to include the new `AUTH_API_URL` in your `.env` file. If you want to run a local version of the API from u08 the URL is `http://localhost/api/auth`.
-
 [Live app preview](https://relaxed-shirley-9bed8f.netlify.app/)
 
 ## Introduction
